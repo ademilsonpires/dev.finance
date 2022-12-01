@@ -99,13 +99,19 @@ button:hover {
 .button.cancel {
     width: 100%;
     height: 50px;
-    border: 1px solid var(--red);
+    border: 2px solid var(--red);
     color: var(--red);
     border-radius: 0.25rem;
-    text-align: center;
-    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     
+}
+
+.button.cancel:hover {
+    background: var(--red);
+    color: white;
 }
 
 /* HEADER ================== */

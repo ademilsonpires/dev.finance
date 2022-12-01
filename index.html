@@ -47,7 +47,7 @@
         <section id="transaction">
             <!-- Modificar a classe do h2 para sr-only-->
             <h2 class="sr-only">Transações</h2>
-            <a href="#" class="button new">+ Nova Transação</a>
+            <a href="#" onclick="Modal.open()" class="button new">+ Nova Transação</a>
             <table id="data-table">
                 <thead>
                     <tr>
@@ -96,7 +96,7 @@
         </section>
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay ">
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
@@ -118,7 +118,7 @@
 
                     <div class="input-group actions">
 
-                        <a href="#" class="button cancel">Cancelar</a>
+                        <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
                         <button>Salvar</button>
                     </div>
 
@@ -133,5 +133,31 @@
     </footer>
 
 </body>
+<script>
+   const Modal = {
+        open(){
+            //abrir Modal
+            //Adicionar a class active ao modal para abrir
+            document.querySelector('.modal-overlay')
+                .classList.add('active');
+
+
+        },
+        close(){
+            //fechar o modal
+            //remover a classe active no modal
+            document
+                .querySelector('.modal-overlay')
+                .classList
+                .remove('active');
+
+
+
+        }
+
+    }
+
+
+</script>
 
 </html>

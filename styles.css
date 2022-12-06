@@ -114,6 +114,10 @@ button:hover {
     color: white;
 }
 
+img {
+    cursor: pointer;
+}
+
 /* HEADER ================== */
 
 header {
@@ -313,7 +317,7 @@ input {
     margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help {
     opacity: 0.4;
 }
 
